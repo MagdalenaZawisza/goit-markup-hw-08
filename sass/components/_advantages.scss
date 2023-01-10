@@ -1,0 +1,21 @@
+.advantages {
+  &__title {
+    @extend %title;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  &__text {
+    color: $paragraphColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+
+  &__icon {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: $backgrandColor;
+    border-radius: 4px;
+  }
+}

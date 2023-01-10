@@ -1,0 +1,11 @@
+.form {
+  float: left;
+  margin-top: 72px;
+
+  &__title {
+    @extend %title;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+}

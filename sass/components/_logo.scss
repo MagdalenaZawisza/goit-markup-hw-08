@@ -1,0 +1,16 @@
+.logo {
+  font-family: $fontFamilyIcon;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+
+  &__first-part {
+    color: $brandColor;
+  }
+
+  &__secend-part {
+    color: $whiteColor;
+  }
+}

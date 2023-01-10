@@ -1,0 +1,19 @@
+%icon {
+  fill: $whiteColor;
+  border-radius: 50%;
+  background-color: $backgrandIcon;
+}
+
+%box {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+%title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  }

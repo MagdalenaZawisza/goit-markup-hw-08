@@ -1,0 +1,32 @@
+.menu-portfolio {
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 34px;
+  margin-top: 94px;
+
+  &__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    color: $textColor;
+    background-color: $backgrandColor;
+    border-radius: 4px;
+    cursor: $cursor;
+    border-style: none;
+    width: 121px;
+    height: 38px;
+    padding: 6px 22px;
+
+    &:hover,
+    &:focus {
+      background-color: $brandColor;
+      color: $whiteColor;
+      border-style: none;
+      box-shadow: $boxShadowPortfolio;
+    }
+  }
+}

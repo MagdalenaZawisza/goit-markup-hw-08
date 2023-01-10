@@ -1,0 +1,30 @@
+.tender {
+  @extend %title;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+
+  &__box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $whiteColor;
+    background-color: $backgrandTenderColor;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+  }
+}

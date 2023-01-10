@@ -1,0 +1,79 @@
+.menu {
+  border: 1px solid $borderColor;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  &__page {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    vertical-align: middle;
+    fill: currentColor;
+    margin-right: 10px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      fill: $brandColor;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    text-decoration: none;
+    cursor: $cursor;
+    color: $textColor;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+    }
+  }
+  &__phone {
+    @extend .menu__nav;
+    font-weight: 500;
+    color: $paragraphColor;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+    }
+  }
+
+  &__mail {
+    @extend .menu__phone;
+    margin-right: 50px;
+
+    &:hover,
+    &:focus {
+      color: $brandColor;
+    }
+  }
+
+  &__nav--active {
+    color: $brandColor;
+
+    &:after {
+      content: "";
+      display: block;
+      background-color: $brandColor;
+      height: 4px;
+      width: 100%;
+      border-radius: 2px;
+      position: relative;
+      top: 32px;
+    }
+  }
+}
