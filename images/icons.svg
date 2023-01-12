@@ -159,6 +159,12 @@
 <path fill="#2196f3" style="fill: var(--color1, #2196f3)" d="M4.269-0.010h25.617c2.358 0 4.269 1.911 4.269 4.269v23.482c0 2.358-1.911 4.269-4.269 4.269h-25.617c-2.358 0-4.269-1.912-4.269-4.269v-23.482c0-2.358 1.911-4.269 4.269-4.269z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff); stroke: var(--color2, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M8.447 16.538l-0.147-0.141-0.147 0.139-2.058 1.951 0.162 0.156 7.61 7.258 0.147-0.141 16.181-15.436-0.162-0.154-2.030-1.936-0.147 0.141-13.989 13.333-5.42-5.17z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 48 32">
+<path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+</symbol>
+<symbol id="icon-menu_40px" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 </defs>
 </svg>
 

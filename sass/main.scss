@@ -1,7 +1,7 @@
 @import "./utils/vars";
 @import "./utils/global";
-@import "./components/logo";
 @import "./components/page-header";
+@import "./components/logo";
 @import "./components/hero";
 @import "./components/advantages";
 @import "./components/tender";
@@ -25,23 +25,27 @@ body {
   font-family: $fontFamily;
   color: $textColor;
   background-color: $whiteColor;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.list {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
-}
+// .container {
+//   max-width: 1200px;
+//    margin: 0 auto;
+//   padding: 0 15px;
+// }
 
-.section {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+// .list {
+//   list-style-type: none;
+//   display: flex;
+//   gap: 30px;
+// }
+
+// .section {
+//   margin-top: 94px;
+//   margin-bottom: 94px;
+// }
