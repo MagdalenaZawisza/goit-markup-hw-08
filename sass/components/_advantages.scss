@@ -1,7 +1,7 @@
 .advantages {
   &__title {
     @extend %title;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     padding: 0;
     text-align: center;
     text-transform: uppercase;
@@ -9,7 +9,7 @@
 
   &__text {
     color: $paragraphColor;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }

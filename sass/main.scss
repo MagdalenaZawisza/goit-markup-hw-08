@@ -26,19 +26,20 @@ body {
   font-family: $fontFamily;
   color: $textColor;
   background-color: $whiteColor;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 480px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 0.93rem;
+  padding: 0 1rem;
 }
 
 .list {
   list-style-type: none;
   margin-bottom: 3.75rem;
   gap: 1.875rem;
-
 }
 
 .section {
@@ -46,6 +47,11 @@ body {
   margin-bottom: 3.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
 
 // .container {
 //   max-width: 1200px;
