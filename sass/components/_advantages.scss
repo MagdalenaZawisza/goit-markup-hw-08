@@ -1,4 +1,7 @@
 .advantages {
+  display: flex;
+  align-items: center;
+
   &__title {
     @extend %title;
     margin-bottom: 0.625rem;
@@ -15,7 +18,9 @@
   }
 
   &__icon {
-    padding: 1.56rem 11.87rem;
+    text-align: center;
+    padding-top: 1.56rem;
+    padding-bottom: 1.56rem;
     margin-bottom: 1.875rem;
     margin-top: 1.875rem;
     background-color: $backgrandColor;

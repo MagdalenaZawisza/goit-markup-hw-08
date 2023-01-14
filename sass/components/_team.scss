@@ -11,31 +11,38 @@
     padding-bottom: 1.875rem;
     margin: 0;
   }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
   &__card {
     background-color: $whiteColor;
     box-shadow: $boxShadow;
-    border-radius: 0px 0px 4px 4px;
-  }
+    border-radius: 0px 0px 0.25rem 0.25rem;
+     }
 
   &__name {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $textColor;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 1.875rem;
+    margin-bottom: 0.625rem;
   }
 
   &__job {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: $paragraphColor;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   &__box {

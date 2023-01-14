@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 480px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -45,6 +45,13 @@ body {
 .section {
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;
+}
+
+img {
+  vertical-align: middle;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
