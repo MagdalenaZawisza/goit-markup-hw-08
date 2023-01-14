@@ -1,22 +1,21 @@
 .team {
   background-color: $backgrandColor;
   text-align: center;
-  padding-bottom: 94px;
+
+  &__title {
+    @extend %title;
+    font-size: 1.75rem;
+    line-height: 1.18;
+    text-align: center;
+    padding-top: 3.75rem;
+    padding-bottom: 1.875rem;
+    margin: 0;
+  }
 
   &__card {
     background-color: $whiteColor;
     box-shadow: $boxShadow;
     border-radius: 0px 0px 4px 4px;
-  }
-
-  &__title {
-    @extend %title;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-    margin: 0;
   }
 
   &__name {
@@ -38,20 +37,76 @@
     color: $paragraphColor;
     margin-bottom: 16px;
   }
+
   &__box {
     @extend %box;
-    margin: 16px 32px 18px 32px;
+    justify-content: center;
+    margin-bottom: 1.875rem;
   }
 
   &__icon {
-    @extend %icon;
+    fill: $iconColor;
+    border-radius: 50%;
+    background-color: $backgrandIcon;
     cursor: $cursor;
-
-    &:hover,
-    &:focus,
-    &:active {
-      fill: $whiteColor;
-      background-color: $brandColor;
-    }
+    margin-bottom: 1.5rem;
   }
 }
+
+// .team {
+//   background-color: $backgrandColor;
+//   text-align: center;
+//   padding-bottom: 94px;
+
+//   &__card {
+//     background-color: $whiteColor;
+//     box-shadow: $boxShadow;
+//     border-radius: 0px 0px 4px 4px;
+//   }
+
+//   &__title {
+//     @extend %title;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     text-align: center;
+//     padding-top: 94px;
+//     padding-bottom: 50px;
+//     margin: 0;
+//   }
+
+//   &__name {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     letter-spacing: 0.03em;
+//     color: $textColor;
+//     justify-content: center;
+//     margin-top: 30px;
+//     margin-bottom: 10px;
+//   }
+
+//   &__job {
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     letter-spacing: 0.03em;
+//     color: $paragraphColor;
+//     margin-bottom: 16px;
+//   }
+//   &__box {
+//     @extend %box;
+//     margin: 16px 32px 18px 32px;
+//   }
+
+//   &__icon {
+//     @extend %icon;
+//     cursor: $cursor;
+
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       fill: $whiteColor;
+//       background-color: $brandColor;
+//     }
+//   }
+// }

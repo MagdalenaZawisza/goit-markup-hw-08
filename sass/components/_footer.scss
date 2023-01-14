@@ -1,25 +1,26 @@
 .contact {
   background-color: $bgnColor;
-  height: 252px;
+  height: 37.687rem;
+  text-align: center;
 
   &__space {
-    float: left;
-    margin-right: 70px;
-    margin-top: 15px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  &__box {
+    &__box {
     padding-top: 15%;
     list-style: none;
-  }
+    }
 
   &__list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 20px;
-  }
+    }
 
-  &__data {
+    &__data {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -42,3 +43,48 @@
     @extend .contact__mail;
   }
 }
+
+// .contact {
+//   background-color: $bgnColor;
+//   height: 252px;
+
+//   &__space {
+//     float: left;
+//     margin-right: 70px;
+//     margin-top: 15px;
+//   }
+
+//   &__box {
+//     padding-top: 15%;
+//     list-style: none;
+//   }
+
+//   &__list {
+//     list-style-type: none;
+//     padding-left: 0;
+//     margin-top: 20px;
+//   }
+
+//   &__data {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $whiteColor;
+//     padding-top: 20px;
+//     text-decoration: none;
+//   }
+
+//   &__mail {
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $contactColor;
+//     text-decoration: none;
+//   }
+
+//   &__phone {
+//     @extend .contact__mail;
+//   }
+// }

@@ -1,5 +1,6 @@
 @import "./utils/vars";
 @import "./utils/global";
+@import "./components/mobile-menu";
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/hero";
@@ -30,8 +31,21 @@ body {
 .container {
   max-width: 480px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 0.93rem;
 }
+
+.list {
+  list-style-type: none;
+  margin-bottom: 3.75rem;
+  gap: 1.875rem;
+
+}
+
+.section {
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
 
 // .container {
 //   max-width: 1200px;

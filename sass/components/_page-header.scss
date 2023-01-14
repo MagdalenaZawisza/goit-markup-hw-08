@@ -1,101 +1,96 @@
 .menu {
   border-bottom: 1px solid $borderColor;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   &__box {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
-  &__toggle {
-    cursor: $cursor;
-    border: none;
-    background-color: $whiteColor;
-  }
 }
 
-// &__box {
-//  display: flex;
-//  align-items: center;
-//   }
-// }
 
-// border: 1px solid $borderColor;
-// padding-top: 24px;
-// padding-bottom: 25px;
 
-// &__page {
-//   display: flex;
-//   align-items: center;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   justify-content: space-between;
-// }
 
-// &__icon {
-//   vertical-align: middle;
-//   fill: currentColor;
-//   margin-right: 10px;
+// @media screen and (min-width: 1200px) {
+//   .menu {
+//     border: 1px solid $borderColor;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
 
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     fill: $brandColor;
-//   }
-// }
+//     &__page {
+//       display: flex;
+//       align-items: center;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       font-size: 14px;
+//       line-height: 1.14;
+//       letter-spacing: 0.02em;
+//       justify-content: space-between;
+//     }
 
-// &__box {
-//   display: flex;
-//   align-items: center;
-// }
+//     &__icon {
+//       vertical-align: middle;
+//       fill: currentColor;
+//       margin-right: 10px;
 
-// &__nav {
-//   text-decoration: none;
-//   cursor: $cursor;
-//   color: $textColor;
+//       &:hover,
+//       &:focus,
+//       &:active {
+//         fill: $brandColor;
+//       }
+//     }
 
-//   &:hover,
-//   &:focus {
-//     color: $brandColor;
-//   }
-// }
-// &__phone {
-//   @extend .menu__nav;
-//   font-weight: 500;
-//   color: $paragraphColor;
+//     &__box {
+//       display: flex;
+//       align-items: center;
+//     }
 
-//   &:hover,
-//   &:focus {
-//     color: $brandColor;
-//   }
-// }
+//     &__nav {
+//       text-decoration: none;
+//       cursor: $cursor;
+//       color: $textColor;
 
-// &__mail {
-//   @extend .menu__phone;
-//   margin-right: 50px;
+//       &:hover,
+//       &:focus {
+//         color: $brandColor;
+//       }
+//     }
+//     &__phone {
+//       @extend .menu__nav;
+//       font-weight: 500;
+//       color: $paragraphColor;
 
-//   &:hover,
-//   &:focus {
-//     color: $brandColor;
-//   }
-// }
+//       &:hover,
+//       &:focus {
+//         color: $brandColor;
+//       }
+//     }
 
-// &__nav--active {
-//   color: $brandColor;
+//     &__mail {
+//       @extend .menu__phone;
+//       margin-right: 50px;
 
-//   &:after {
-//     content: "";
-//     display: block;
-//     background-color: $brandColor;
-//     height: 4px;
-//     width: 100%;
-//     border-radius: 2px;
-//     position: relative;
-//     top: 32px;
+//       &:hover,
+//       &:focus {
+//         color: $brandColor;
+//       }
+//     }
+
+//     &__nav--active {
+//       color: $brandColor;
+
+//       &:after {
+//         content: "";
+//         display: block;
+//         background-color: $brandColor;
+//         height: 4px;
+//         width: 100%;
+//         border-radius: 2px;
+//         position: relative;
+//         top: 32px;
+//       }
+//     }
 //   }
 // }

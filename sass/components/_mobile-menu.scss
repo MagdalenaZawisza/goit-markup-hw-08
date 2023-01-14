@@ -1,0 +1,93 @@
+.menu-toggle {
+  cursor: $cursor;
+  border: none;
+  background-color: $whiteColor;
+  position: absolute;
+  top: 1.375rem;
+  right: 1.5rem;
+
+  &:hover,
+  &:focus {
+    fill: $brandColor;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background-color: $whiteColor;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.is-open {
+  transform: translateX(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  display: block;
+}
+.mobile-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__link {
+    text-decoration: none;
+    color: $textColor;
+    letter-spacing: 0.02em;
+    font-size: 2.5rem;
+    line-height: 2.93rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $brandColor;
+    }
+  }
+  &__phone {
+    text-decoration: none;
+    color: $brandColor;
+    letter-spacing: 0.02em;
+    font-size: 2.12rem;
+    line-height: 2.5rem;
+    margin-top: 18.87rem;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $paragraphColor;
+    letter-spacing: 0.02em;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  &__social {
+    list-style: none;
+    margin-right: 0.625rem;
+    display: flex;
+
+    &__link {
+      text-decoration: none;
+      color: $brandColor;
+      letter-spacing: 0.02em;
+      font-size: 1.125rem;
+      line-height: 1.22;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+    }
+    &__link--first {
+      padding-left: 0;
+    }
+    &__link--last {
+      border-right: none;
+    }
+  }
+}

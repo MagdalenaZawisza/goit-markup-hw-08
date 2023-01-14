@@ -3,6 +3,8 @@
     @extend %title;
     margin-bottom: 10px;
     padding: 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__text {
@@ -13,9 +15,32 @@
   }
 
   &__icon {
-    padding: 25px 100px;
-    margin-bottom: 30px;
+    padding: 1.56rem 11.87rem;
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
     background-color: $backgrandColor;
     border-radius: 4px;
   }
 }
+
+// .advantages {
+//   &__title {
+//     @extend %title;
+//     margin-bottom: 10px;
+//     padding: 0;
+//   }
+
+//   &__text {
+//     color: $paragraphColor;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//   }
+
+//   &__icon {
+//     padding: 25px 100px;
+//     margin-bottom: 30px;
+//     background-color: $backgrandColor;
+//     border-radius: 4px;
+//   }
+// }
