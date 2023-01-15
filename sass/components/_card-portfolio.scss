@@ -1,7 +1,7 @@
 .portfolio {
   display: flex;
   background-color: $whiteColor;
-  justify-content: space-between;
+  justify-content: center;
 
   &__box {
     display: flex;
@@ -27,7 +27,7 @@
     border-bottom: 1px solid $portfolioColor;
     border-left: 1px solid $portfolioColor;
     border-right: 1px solid $portfolioColor;
-    width: 370px;
+    position: relative;
 
     &:hover,
     &:focus {
@@ -75,5 +75,17 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     padding: 49px 45px 49px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    &__box {
+      justify-content: space-between;
+    }
+
+    &__list {
+      max-width: 354px;
+    }
   }
 }
