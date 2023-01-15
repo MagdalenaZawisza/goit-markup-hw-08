@@ -1,7 +1,7 @@
 .form {
   display: block;
   align-items: center;
-   margin-top: 3.75rem;
+  margin-top: 3.75rem;
 
   &__title {
     @extend %title;
@@ -11,7 +11,11 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .form {
 
+  }
+}
 
 // .form {
 //   float: left;

@@ -7,6 +7,98 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__main {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 1.25rem 0;
+
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 0.75;
+      visibility: visible;
+      pointer-events: auto;
+      align-items: center;
+    }
+
+    &__page {
+      font-size: 0.875rem;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+
+    &__nav {
+      text-decoration: none;
+      cursor: $cursor;
+      color: $textColor;
+
+      &:hover,
+      &:focus {
+        color: $brandColor;
+      }
+    }
+
+    &__box--tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.625rem;
+      margin-left: 1rem;
+    }
+
+    &__icon {
+      vertical-align: middle;
+      fill: currentColor;
+      margin-right: 0.625rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        fill: $brandColor;
+      }
+    }
+    &__phone {
+      @extend .menu__nav;
+      font-weight: 500;
+      color: $paragraphColor;
+    
+
+      &:hover,
+      &:focus {
+        color: $brandColor;
+      }
+    }
+
+    &__mail {
+      @extend .menu__phone;
+      margin-right: 3.125rem;
+
+      &:hover,
+      &:focus {
+        color: $brandColor;
+      }
+    }
+
+    &__nav--active {
+      color: $brandColor;
+
+      &:after {
+        content: "";
+        display: block;
+        background-color: $brandColor;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        position: relative;
+        top: 32px;
+      }
+    }
+  }
 }
 
 // @media screen and (min-width: 1200px) {

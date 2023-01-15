@@ -3,7 +3,6 @@
   align-items: center;
   margin-top: 3.75rem;
 
-
   &__title {
     @extend %title;
     text-transform: uppercase;
@@ -36,7 +35,15 @@
   }
 }
 
-
+@media screen and (min-width: 768px) {
+  .social-media {
+    float: left;
+    margin-top: 72px;
+    margin-right: 20px;
+    margin-left: 144px;
+    margin-bottom: 102px;
+  }
+}
 
 // .social-media {
 //   float: left;

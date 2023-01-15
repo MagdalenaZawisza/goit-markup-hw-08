@@ -56,23 +56,18 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
+  .list {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0;
+    gap: 0;
+  }
+  
 }
 
 // .container {
 //   max-width: 1200px;
-//    margin: 0 auto;
-//   padding: 0 15px;
-// }
 
-// .list {
-//   list-style-type: none;
-//   display: flex;
-//   gap: 30px;
-// }
-
-// .section {
-//   margin-top: 94px;
-//   margin-bottom: 94px;
 // }

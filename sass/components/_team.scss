@@ -23,7 +23,7 @@
     background-color: $whiteColor;
     box-shadow: $boxShadow;
     border-radius: 0px 0px 0.25rem 0.25rem;
-     }
+  }
 
   &__name {
     font-weight: 500;
@@ -56,7 +56,23 @@
     border-radius: 50%;
     background-color: $backgrandIcon;
     cursor: $cursor;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 1.875rem;
+
+    &__flex {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      margin-bottom: 1.875rem;
+    }
   }
 }
 

@@ -43,30 +43,35 @@
               ></path>
             </svg>
           </button>
-          <!-- <nav>
-            <ul class="list">
-              <li>
-                <a class="menu__nav menu__nav--active" href="index.html"
-                  >Agencja</a
-                >
-              </li>
-              <li><a class="menu__nav" href="portfolio.html">Portfolio</a></li>
-              <li><a class="menu__nav" href="/contact">Kontakt</a></li>
-            </ul>
-          </nav> -->
+          <!-- Główne menu -->
+          <div class="menu__main">
+            <nav>
+              <ul class="list">
+                <li>
+                  <a class="menu__nav menu__nav--active" href="index.html"
+                    >Agencja</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__nav" href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a class="menu__nav" href="/contact">Kontakt</a></li>
+              </ul>
+            </nav>
+            <div class="menu__box menu__box--tablet">
+              <a class="menu__mail" href="mailto:info@devstudio.com">
+                <svg class="menu__icon" width="16" height="12">
+                  <use href="images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+              <a class="menu__phone" href="tel:+48111111111">
+                <svg class="menu__icon" width="10" height="16">
+                  <use href="images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
+              >
+            </div>
+          </div>
         </div>
-        <!-- <div class="menu__box">
-          <a class="menu__mail" href="mailto:info@devstudio.com">
-            <svg class="menu__icon" width="16" height="12">
-              <use href="images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-          <a class="menu__phone" href="tel:+48111111111">
-            <svg class="menu__icon" width="10" height="16">
-              <use href="images/icons.svg#icon-smartphone"></use></svg
-            >+48 111 111 111</a
-          >
-        </div> -->
       </div>
     </header>
     <main>
@@ -84,54 +89,62 @@
       <!--NASZE ATUTY-->
       <section class="section advantages">
         <div class="container">
-          <ul class="list">
+          <ul class="list advantages__box">
             <li>
-              <div class="advantages__icon">
-                <svg width="70" height="70">
-                  <use href="images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="advantages__title">Lorem ipsum</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
+              <article class="advantages__container">
+                <div class="advantages__icon">
+                  <svg width="70" height="70">
+                    <use href="images/icons.svg#icon-antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__title">Lorem ipsum</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </article>
             </li>
             <li>
-              <div class="advantages__icon">
-                <svg width="70" height="70">
-                  <use href="images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="advantages__title">Lorem ipsum</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
+              <article class="advantages__container">
+                <div class="advantages__icon">
+                  <svg width="70" height="70">
+                    <use href="images/icons.svg#icon-clock"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__title">Lorem ipsum</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </article>
             </li>
             <li>
-              <div class="advantages__icon">
-                <svg width="70" height="70">
-                  <use href="images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="advantages__title">Lorem ipsum</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
+              <article class="advantages__container">
+                <div class="advantages__icon">
+                  <svg width="70" height="70">
+                    <use href="images/icons.svg#icon-diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__title">Lorem ipsum</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </article>
             </li>
             <li>
-              <div class="advantages__icon">
-                <svg width="70" height="70">
-                  <use href="images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="advantages__title">Lorem ipsum</h3>
-              <p class="advantages__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-                arcu sem. Sed non sodales dui. Interdum et malesuada
-              </p>
+              <article class="advantages__container">
+                <div class="advantages__icon">
+                  <svg width="70" height="70">
+                    <use href="images/icons.svg#icon-astronaut"></use>
+                  </svg>
+                </div>
+                <h3 class="advantages__title">Lorem ipsum</h3>
+                <p class="advantages__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                  vel arcu sem. Sed non sodales dui. Interdum et malesuada
+                </p>
+              </article>
             </li>
           </ul>
         </div>
@@ -184,10 +197,20 @@
             <h2 class="team__title">Nasz zespół</h2>
             <ul class="team__flex list">
               <li class="team__card">
-                <img
-                  src="images/product-designer.jpg"
-                  alt="Uśmiechniętym męższczyzna w okularach z brodą w koszuli"
-                />
+                <picture>
+                  <source
+                    srcset="images/product-designer-1200.jpg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="images/product-designer-768.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="images/product-designer@2x.jpg"
+                    alt="Uśmiechniętym męższczyzna w okularach z brodą w koszuli"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Product Designer</p>
                 <ul class="team__box">
@@ -246,10 +269,20 @@
                 </ul>
               </li>
               <li class="team__card">
-                <img
-                  src="images/frontend-developer.jpg"
-                  alt="Uśmiechnięta kobieta w długich bląd włosach w okularach"
-                />
+                <picture>
+                  <source
+                    srcset="images/frontend-developer-1200.jpg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="images/frontend-developer-768.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="images/frontend-developer.jpg"
+                    alt="Uśmiechnięta kobieta w długich bląd włosach w okularach"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Frontend Developer</p>
                 <ul class="team__box">
@@ -308,10 +341,20 @@
                 </ul>
               </li>
               <li class="team__card">
-                <img
-                  src="images/marketing.jpg"
-                  alt="Męszczyzna uśmiechnięty w jasnej koszuli"
-                />
+                <picture>
+                  <source
+                    srcset="images/marketing-1200.jpg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="images/marketing-768.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="images/marketing.jpg"
+                    alt="Męszczyzna uśmiechnięty w jasnej koszuli"
+                  />
+                </picture>
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">Marketing</p>
                 <ul class="team__box">
@@ -370,10 +413,21 @@
                 </ul>
               </li>
               <li class="team__card">
-                <img
-                  src="images/ui-designer.jpg"
-                  alt="Męszczyzna z brodą w okularach w czarnym tiszercie"
-                />
+                <picture>
+                  <source
+                    srcset="images/ui-designer-1200.jpg"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="images/ui-designer-768.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="images/ui-designer.jpg"
+                    alt="Męszczyzna z brodą w okularach w czarnym tiszercie"
+                  />
+                </picture>
+
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__job">UI Designer</p>
                 <ul class="team__box">
