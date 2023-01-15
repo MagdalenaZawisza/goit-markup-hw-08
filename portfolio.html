@@ -44,30 +44,35 @@
               ></path>
             </svg>
           </button>
-          <!-- <nav>
-            <ul class="list">
-              <li>
-                <a class="menu__nav menu__nav--active" href="index.html"
-                  >Agencja</a
-                >
-              </li>
-              <li><a class="menu__nav" href="portfolio.html">Portfolio</a></li>
-              <li><a class="menu__nav" href="/contact">Kontakt</a></li>
-            </ul>
-          </nav> -->
+          <!-- Główne menu -->
+          <div class="menu__main">
+            <nav>
+              <ul class="list">
+                <li>
+                  <a class="menu__nav menu__nav--active" href="index.html"
+                    >Agencja</a
+                  >
+                </li>
+                <li>
+                  <a class="menu__nav" href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a class="menu__nav" href="/contact">Kontakt</a></li>
+              </ul>
+            </nav>
+            <div class="menu__box menu__box--tablet">
+              <a class="menu__mail" href="mailto:info@devstudio.com">
+                <svg class="menu__icon" width="16" height="12">
+                  <use href="images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+              <a class="menu__phone" href="tel:+48111111111">
+                <svg class="menu__icon" width="10" height="16">
+                  <use href="images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
+              >
+            </div>
+          </div>
         </div>
-        <!-- <div class="menu__box">
-          <a class="menu__mail" href="mailto:info@devstudio.com">
-            <svg class="menu__icon" width="16" height="12">
-              <use href="images/icons.svg#icon-envelope"></use></svg
-            >info@devstudio.com</a
-          >
-          <a class="menu__phone" href="tel:+48111111111">
-            <svg class="menu__icon" width="10" height="16">
-              <use href="images/icons.svg#icon-smartphone"></use></svg
-            >+48 111 111 111</a
-          >
-        </div> -->
       </div>
     </header>
     <main>
@@ -274,7 +279,7 @@
     <!--Footer-->
     <footer>
       <div class="contact">
-        <div class="container">
+        <div class="container contact__flex">
           <div class="contact__space">
             <div class="contact__box">
               <h2 class="logo">
@@ -387,6 +392,7 @@
         </div>
       </div>
     </footer>
+    <!-- menu mobile -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -448,6 +454,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
+   
     </body>
 </html>

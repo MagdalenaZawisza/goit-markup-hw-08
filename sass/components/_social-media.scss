@@ -1,7 +1,6 @@
 .social-media {
-  display: block;
-  align-items: center;
-  margin-top: 3.75rem;
+  text-align: center;
+  margin-bottom: 60px;
 
   &__title {
     @extend %title;
@@ -35,48 +34,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .social-media {
-    float: left;
-    margin-top: 72px;
-    margin-right: 20px;
-    margin-left: 144px;
-    margin-bottom: 102px;
+    text-align: left;
+    margin-bottom: 0;
   }
 }
-
-// .social-media {
-//   float: left;
-//   margin-top: 72px;
-//   margin-right: 78px;
-
-//   &__title {
-//     @extend %title;
-//     text-transform: uppercase;
-//     color: $whiteColor;
-//     margin-bottom: 20px;
-//   }
-
-//   &__box {
-//     @extend %box;
-//     cursor: $cursor;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       fill: $whiteColor;
-//     }
-//   }
-
-//   &__icon {
-//     @extend %icon;
-//     cursor: $cursor;
-//     box-shadow: 0px 4px 4px $shadowColor;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       background-color: $brandColor;
-//     }
-//   }
-// }

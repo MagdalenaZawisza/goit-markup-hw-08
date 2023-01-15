@@ -1,17 +1,18 @@
 .contact {
-  background-color: $bgnColor;
-  height: 37.687rem;
-  text-align: center;
+  padding: 60px 0px;
+  color: #fff;
+  background-color: #2f303a;
+  line-height: 1.7;
 
-  &__space {
-    display: block;
+  &__flex {
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
   }
-
-  &__box {
-    padding-top: 15%;
-    list-style: none;
+  &__space {
+    text-align: center;
+    margin-bottom: 60px;
   }
 
   &__list {
@@ -29,6 +30,7 @@
     padding-top: 20px;
     text-decoration: none;
   }
+
   &__mail {
     font-style: normal;
     font-size: 14px;
@@ -45,55 +47,26 @@
 
 @media screen and (min-width: 768px) {
   .contact {
-    &__space {
-      float: left;
-      margin-left: 76px;
-      margin-top: 15px;
+    &__flex {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }
 
-// .contact {
-//   background-color: $bgnColor;
-//   height: 252px;
+@media screen and (min-width: 1200px) {
+  .contact {
+    &__flex {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
 
-//   &__space {
-//     float: left;
-//     margin-right: 70px;
-//     margin-top: 15px;
-//   }
-
-//   &__box {
-//     padding-top: 15%;
-//     list-style: none;
-//   }
-
-//   &__list {
-//     list-style-type: none;
-//     padding-left: 0;
-//     margin-top: 20px;
-//   }
-
-//   &__data {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: $whiteColor;
-//     padding-top: 20px;
-//     text-decoration: none;
-//   }
-
-//   &__mail {
-//     font-style: normal;
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     color: $contactColor;
-//     text-decoration: none;
-//   }
-
-//   &__phone {
-//     @extend .contact__mail;
-//   }
-// }
+    &__space {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -19,7 +19,7 @@
   &__icon {
     border: 1px solid $iconColor;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
 
     &:hover,
     &:focus,
@@ -32,36 +32,10 @@
   }
 }
 
-// .client {
-//   &__title {
-//     @extend %title;
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-//     padding-top: 94px;
-//     padding-bottom: 50px;
-//     margin: 0;
-//   }
-
-//   &__box {
-//     display: flex;
-//     list-style: none;
-//     fill: $iconColor;
-//     justify-content: space-around;
-//   }
-
-//   &__icon {
-//     border: 1px solid $iconColor;
-//     border-radius: 4px;
-//     padding: 16px 32px;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       fill: $brandColor;
-//       border: 1px solid $brandColor;
-//       border-radius: 4px;
-//       cursor: $cursor;
-//     }
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .client {
+    &__box {
+      flex-wrap: nowrap;
+    }
+  }
+}

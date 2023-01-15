@@ -1,30 +1,24 @@
 .form {
-  display: block;
+  display: flex;
   align-items: center;
-  margin-top: 3.75rem;
+  justify-content: space-between;
+  flex-direction: column;
 
   &__title {
     @extend %title;
     text-transform: uppercase;
     color: $whiteColor;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form {
+    flex-wrap: nowrap;
 
+    &__title {
+      align-self: flex-start;
+    }
   }
 }
-
-// .form {
-//   float: left;
-//   margin-top: 72px;
-
-//   &__title {
-//     @extend %title;
-//     text-transform: uppercase;
-//     color: $whiteColor;
-//     margin-bottom: 20px;
-//   }
-// }

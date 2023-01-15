@@ -36,6 +36,10 @@ body {
   padding: 0 1rem;
 }
 
+.container--hidden {
+  display: none;
+}
+
 .list {
   list-style-type: none;
   margin-bottom: 3.75rem;
@@ -58,16 +62,23 @@ img {
   .container {
     max-width: 768px;
   }
+
+  .container--hidden {
+    display: none;
+  }
   .list {
     list-style-type: none;
     display: flex;
     margin-bottom: 0;
-    gap: 0;
   }
-  
 }
 
-// .container {
-//   max-width: 1200px;
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 
-// }
+  .container--hidden {
+    display: block;
+  }
+}

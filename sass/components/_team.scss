@@ -17,6 +17,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 3.75rem;
+    gap: 1.875rem;
   }
 
   &__card {
@@ -48,7 +51,6 @@
   &__box {
     @extend %box;
     justify-content: center;
-    margin-bottom: 1.875rem;
   }
 
   &__icon {
@@ -56,7 +58,7 @@
     border-radius: 50%;
     background-color: $backgrandIcon;
     cursor: $cursor;
-    margin-bottom: 3.75rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -65,9 +67,13 @@
     padding-bottom: 1.875rem;
 
     &__flex {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      list-style-type: none;
+      margin-bottom: 0;
+      gap: 0;
     }
 
     &__card {
@@ -76,60 +82,33 @@
   }
 }
 
-// .team {
-//   background-color: $backgrandColor;
-//   text-align: center;
-//   padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 5.875rem;
 
-//   &__card {
-//     background-color: $whiteColor;
-//     box-shadow: $boxShadow;
-//     border-radius: 0px 0px 4px 4px;
-//   }
+    &__title {
+      font-size: 2.25rem;
+      line-height: 1.16;
+      padding-top: 5.875rem;
+      padding-bottom: 3.125rem;
+      margin: 0;
+    }
 
-//   &__title {
-//     @extend %title;
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-//     padding-top: 94px;
-//     padding-bottom: 50px;
-//     margin: 0;
-//   }
+    &__icon {
+      fill: $whiteColor;
+      margin-bottom: 0;
 
-//   &__name {
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.18;
-//     letter-spacing: 0.03em;
-//     color: $textColor;
-//     justify-content: center;
-//     margin-top: 30px;
-//     margin-bottom: 10px;
-//   }
+      &:hover,
+      &:focus,
+      &:active {
+        fill: $whiteColor;
+        background-color: $brandColor;
+      }
+    }
 
-//   &__job {
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.18;
-//     letter-spacing: 0.03em;
-//     color: $paragraphColor;
-//     margin-bottom: 16px;
-//   }
-//   &__box {
-//     @extend %box;
-//     margin: 16px 32px 18px 32px;
-//   }
-
-//   &__icon {
-//     @extend %icon;
-//     cursor: $cursor;
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//       fill: $whiteColor;
-//       background-color: $brandColor;
-//     }
-//   }
-// }
+    &__flex {
+      flex-wrap: nowrap;
+      gap: 1.875rem;
+    }
+  }
+}
