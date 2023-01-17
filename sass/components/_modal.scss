@@ -2,7 +2,6 @@
   position: absolute;
   top: auto;
   left: auto;
-  width: auto;
 
   background-color: $whiteColor;
   box-shadow: $boxShadow;
@@ -18,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $textColor;
-    margin: 40px 40px 12px 40px;
+    margin: 2.5rem 2.5rem 0.75rem 2.5rem;
   }
 
   &__form {
@@ -75,9 +74,9 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: $paragraphColor;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 30px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 1.875rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -101,10 +100,11 @@
     font-size: 16px;
     line-height: 1.88;
     color: $whiteColor;
-    margin-left: 125px;
-    margin-bottom: 40px;
     padding: 10px 76px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
 
     &:hover,
     &:focus {
