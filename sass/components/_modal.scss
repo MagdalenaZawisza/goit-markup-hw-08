@@ -2,7 +2,7 @@
   position: absolute;
   top: auto;
   left: auto;
-  width: 450px;
+  width: auto;
 
   background-color: $whiteColor;
   box-shadow: $boxShadow;
@@ -206,7 +206,7 @@
     }
 
     &__button {
-        margin-left: 164px;
+      margin-left: 164px;
     }
   }
 }
