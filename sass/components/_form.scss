@@ -1,8 +1,5 @@
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  width: 100%;
 
   &__title {
     @extend %title;
@@ -16,6 +13,7 @@
 @media screen and (min-width: 1200px) {
   .form {
     flex-wrap: nowrap;
+    width: auto;
 
     &__title {
       align-self: flex-start;
