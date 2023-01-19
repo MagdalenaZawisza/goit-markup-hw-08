@@ -18,9 +18,12 @@
   background-color: $whiteColor;
   width: auto;
 
-  &:hover,
-  &:focus {
-    fill: $brandColor;
+  &__icon {
+    &:hover,
+    &:focus,
+    &:active {
+      fill: $brandColor;
+    }
   }
 }
 .menu-box {
