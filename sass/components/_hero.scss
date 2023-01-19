@@ -61,11 +61,11 @@
   .primary {
     background-image: url(../images/header-img-desctop.jpg);
     height: 600px;
+    padding: 200px 0;
 
     &__title {
       max-width: 696px;
-      padding-top: 28.75%;
-      font-size: 2.75rem;
+          font-size: 2.75rem;
       line-height: 1.36;
       text-transform: uppercase;
       color: $whiteColor;
